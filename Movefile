@@ -1,0 +1,60 @@
+local:
+  vhost: "http://local.wordpress.dev/"
+  wordpress_path: "/vagrant/www/wordpress-default" # use an absolute path here
+
+  database:
+    name: "wordpress_default"
+    user: "wp"
+    password: "wp"
+    host: "localhost"
+staging:
+  vhost: "http://staging.jacobj.sgedu.site"
+  wordpress_path: "/home/jacobj05/public_html/staging" # use an absolute path here
+
+  database:
+    name: "jacobj05_staging"
+    user: "jacobj05"
+    password: "Enthrall@1"
+    host: "localhost"
+    # port: "3308" # Use just in case you have exotic server config
+    # mysqldump_options: "--max_allowed_packet=1G" # Only available if using SSH
+
+  exclude:
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "node_modules/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-config.php"
+    - "wp-content/*.sql"
+
+  # paths: # you can customize wordpress internal paths
+  #   wp_content: "/wp-content"
+  #   uploads: "wp-content/uploads"
+  #   plugins: "wp-content/plugins"
+  #   themes: "wp-content/themes"
+  #   languages: "wp-content/languages"
+
+  ssh:
+    host: "184.154.247.85"
+    user: "jacobj05"
+  # password: "" # password is optional, will use public keys if available.
+    port: 18765 # Port is optional
+  #   rsync_options: "--verbose" # Additional rsync options, optional
+  #   gateway: # Gateway is optional
+  #     host: "host"
+  #     user: "user"
+  #     password: "password" # password is optional, will use public keys if available.
+
+  # ftp:
+  #   user: "user"
+  #   password: "password"
+  #   host: "host"
+  #   passive: true
+  #   scheme: "ftps" # default "ftp"
+
+# staging: # multiple environments can be specified
+#   [...]
