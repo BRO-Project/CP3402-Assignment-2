@@ -1,0 +1,1 @@
+This git contains an entire upload of Wordpress, so as well as the theme being edited, other factors like the content of the website, and other components can be edited by everybody, and added onto Github.
