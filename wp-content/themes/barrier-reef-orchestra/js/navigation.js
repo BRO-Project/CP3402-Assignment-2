@@ -5,6 +5,7 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+<<<<<<< HEAD
  
 ( function( $ ) {
 	var container, button, menu, links, subMenus;
@@ -138,6 +139,9 @@
 	
 } )( jQuery );*/
 
+=======
+ */
+>>>>>>> d7cb40f60eea6ea835e7339b0ecc626010cce69e
 ( function( $ ) {
 	var container, button, menu, links, subMenus;
 
@@ -268,4 +272,8 @@
 		position = $(this).scrollTop();
 	});
 	
+<<<<<<< HEAD
 } )( jQuery );
+=======
+} )( jQuery );
+>>>>>>> d7cb40f60eea6ea835e7339b0ecc626010cce69e

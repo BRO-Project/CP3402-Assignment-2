@@ -1,9 +1,16 @@
 /*
 Theme Name: Barrier Reef Orchestra
+<<<<<<< HEAD:wp-content/themes/barrier-reef-orchestra/style.css
 Theme URI: 
 Author: Himesh Ravi, Jacob Jackon, Jordan Verhoeven
 Author URI: 
 Description: A Wordpress theme for the Barrier Reef Orchestra, based on the underscores blank theme (http://underscores.me/).
+=======
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+>>>>>>> d7cb40f60eea6ea835e7339b0ecc626010cce69e:wp-content/themes/barrier-reef-orchestra/style.css
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -591,6 +598,7 @@ a:active {
 .main-navigation ul .toggled-on {
 	display: block;
 }
+<<<<<<< HEAD:wp-content/themes/barrier-reef-orchestra/style.css
 
 .main-navigation li {
 	border-top: 1px solid #eaeaea;
@@ -655,6 +663,72 @@ a:active {
 
 .dropdown-toggle.toggle-on:after {
 	content: "\f062";
+=======
+
+.main-navigation li {
+	border-top: 1px solid #eaeaea;
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+	position: relative;
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current_page_item > a,
+.main-navigation .current_page_ancestor > a {
+	font-weight: 700;
+}
+
+.main-navigation .nav-menu > ul > li:first-child,
+.main-navigation .nav-menu > li:first-child {
+	border-top: 0;
+}
+
+.main-navigation .menu-item-has-children > a,
+.main-navigation .page_item_has_children > a{
+	padding-right: 48px;
+}
+
+.no-js .main-navigation ul ul {
+	display: block;
+}
+
+.dropdown-toggle {
+	position: absolute;
+	height: 27px;
+	width: 27px;
+	top: 12px;
+	right: 6px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 0;
+	font-family: 'FontAwesome';
+	background-color: #000;
+	border: 1px solid #fff;
+	content: "";
+	color: #fff;
+	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
+}
+
+.dropdown-toggle:after {
+	content: "\f078";
+	font-size: 14px;
+	line-height: 27px;
+	position: relative;
+	top: 0;
+	left: 1px;
+	width: 27px;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+	background-color: #fff;
+	color: #ff0;
+}
+
+.dropdown-toggle.toggle-on:after {
+	content: "\f077";
+>>>>>>> d7cb40f60eea6ea835e7339b0ecc626010cce69e:wp-content/themes/barrier-reef-orchestra/style.css
 }
 
 /* Small menu. */

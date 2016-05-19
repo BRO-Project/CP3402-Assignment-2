@@ -117,22 +117,14 @@ function barrier_reef_orchestra_scripts() {
 	wp_enqueue_style( 'barrier-reef-orchestra-style', get_stylesheet_uri() );
         
         //Add Google Fonts : Fira Sans and Merriweather
-        //wp_enqueue_style( 'barrier-reef-orchestra-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Merriweather:400,400italic,700italic,700');
-        wp_enqueue_style( 'barrier-reef-orchestra-local-fonts' , get_template_directory_uri() . '/fonts/custom-fonts.css' );
+        wp_enqueue_style( 'barrier-reef-orchestra-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Merriweather:400,400italic,700italic,700');
+        //wp_enqueue_script( 'barrier-reef-orchestra-local-fonts' , get_template_directory_uri() . '/fonts/custom-fonts.css' );
         
         //Add Font Awesome icons
-        wp_enqueue_style( 'barrier-reef-orchestra-font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' );
-        //wp_enqueue_style( 'barrier-reef-orchestra-font-awesome' , get_template_directory_uri() . '/fonts/custom-fonts.css' );
-        
-        // Load Font Awesome
-        //add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
-                function enqueue_font_awesome() {
+        //wp_enqueue_style( 'barrier-reef-orchestra-fonts', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+        wp_enqueue_style( 'barrier-reef-orchestra-local-fonts' , get_template_directory_uri() . '/fonts/font-awesome.min.css' );
 
-                    wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
-
-                }
-        
-	wp_enqueue_script( 'barrier-reef-orchestra-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'barrier-reef-orchestra-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jQuery' ), '20151215', true );
         wp_localize_script( 'barrier-reef-orchestra-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'barrier-reef-orchestra' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'barrier-reef-orchestra' ) . '</span>',
@@ -144,7 +136,7 @@ function barrier_reef_orchestra_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'barrier_reef_orchestra_scripts', 'enqueue_font_awesome' );
+add_action( 'wp_enqueue_scripts', 'barrier_reef_orchestra_scripts' );
 
 /**
  * Implement the Custom Header feature.

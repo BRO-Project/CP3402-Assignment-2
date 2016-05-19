@@ -35,7 +35,11 @@
 			<?php $site_title = get_bloginfo( 'name' ); ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<div class="screen-reader-text">
+<<<<<<< HEAD:wp-content/themes/barrier-reef-orchestra/header.php
 					<?php printf( esc_html__('Go to the home page of %1$s', 'barrier-reef-orchestra'), $site_title ); ?>	
+=======
+					<?php printf( esc_html__('Go to the home page of %1$s', 'popperscores'), $site_title ); ?>	
+>>>>>>> d7cb40f60eea6ea835e7339b0ecc626010cce69e:wp-content/themes/barrier-reef-orchestra/header.php
 				</div>
                             <?php if ( has_custom_logo()) {
                                 the_custom_logo();
