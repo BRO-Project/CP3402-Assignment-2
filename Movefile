@@ -7,6 +7,7 @@ local:
     user: "wp"
     password: "wp"
     host: "localhost"
+    
 staging:
   vhost: "http://staging.jacobj.sgedu.site"
   wordpress_path: "/home/jacobj05/public_html/staging" # use an absolute path here
@@ -56,5 +57,5 @@ staging:
   #   passive: true
   #   scheme: "ftps" # default "ftp"
 
-# staging: # multiple environments can be specified
+# production: # multiple environments can be specified
 #   [...]
